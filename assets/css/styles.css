@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .home-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .name {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .avatar img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 3rem;
+    border: 6px solid #ddd;
+  }
+  
+  .card-links {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .card {
+    display: inline-block;
+    padding: 2rem 3rem;
+    min-width: 200px;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* ── Social Links (Home) ── */
+  .social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.2s;
+  }
+  
+  .social-links a:hover {
+    color: #000;
+  }
+  
+  .secondary-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .back-link {
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .projects-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .projects-container h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 60px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #000;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+  
+  .timeline-year {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    text-align: right;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    transform: translateX(-50%);
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .timeline-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 60px;
+  }
+  
+  .details {
+    flex: 1;
+  }
+  
+  .thumbnail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  /* ── Work Experience Timeline ── */
+  .experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .experience-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-timeline {
+    position: relative;
+    padding-left: 60px;
+  }
+  
+  .experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #000;
+  }
+  
+  .experience-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 60px;
+  }
+  
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    transform: translateX(-50%);
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .job-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .job-dates,
+  .job-summary {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-divider {
+    border: none;
+    border-top: 2px solid #000;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  /* GitHub button under each project */
+.project-github-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .project-github-link:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .project-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .project-title a:hover {
+    text-decoration: underline;
+  }
