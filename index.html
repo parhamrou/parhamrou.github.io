@@ -1,43 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Parham Roufarshbaf</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <!-- FontAwesome for social icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-p1CmjF3o+H5QpDhS/g7qSzpKYz+UbGbx9Yd1dGrQxQbF43H9VJjIoxQ7JgQ1uFiJ0YG8zhjBm6G6aqElYh4+0A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parham Roufarshbaf | Academic CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; background-color: #f8f9fa; }
+        .sidebar { background-color: #fff; border-right: 1px solid #dee2e6; height: 100vh; position: sticky; top: 0; padding: 2rem; }
+        .content-section { background: #fff; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        h2 { border-bottom: 2px solid #007bff; padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: #0056b3; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        .job-title { font-weight: bold; color: #222; }
+        .date-location { color: #6c757d; font-size: 0.9rem; float: right; }
+        .skill-badge { background: #e9ecef; padding: 5px 12px; border-radius: 20px; display: inline-block; margin: 3px; font-size: 0.85rem; }
+        @media (max-width: 768px) { .sidebar { height: auto; position: relative; border-right: none; } .date-location { float: none; display: block; margin-bottom: 10px; } }
+    </style>
 </head>
 <body>
-  <main class="home-container">
-    <h1 class="name">Parham Roufarshbaf</h1>
-    <h2 class="title">Machine Learning Engineer</h2>
-    <div class="avatar">
-      <img src="assets/img/avatar.jpg" alt="Parham Roufarshtab">
-    </div>
-    <div class="card-links">
-      <a href="projects.html" class="card">Projects</a>
-      <a href="experience.html" class="card">Work Experience</a>
-    </div>
 
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://open.spotify.com/user/your-username" target="_blank" rel="noopener" aria-label="Spotify">
-        <i class="fab fa-spotify"></i>
-      </a>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 sidebar text-center">
+            <h1 class="h3 fw-bold">Parham Roufarshbaf</h1>
+            <p class="text-muted">Machine Learning Engineer</p>
+            <hr>
+            <div class="mb-4">
+                <a href="mailto:p_roufarshbaf@yahoo.com" class="d-block mb-2 text-decoration-none text-dark"><i class="fas fa-envelope me-2"></i>Email</a>
+                <a href="https://github.com/parhamrou" class="d-block mb-2 text-decoration-none text-dark"><i class="fab fa-github me-2"></i>GitHub</a>
+                <a href="https://linkedin.com/in/parham-roufarshbaf-03339121a" class="d-block mb-2 text-decoration-none text-dark"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+            </div>
+            <p class="small text-muted">Tehran, Iran</p>
+        </div>
+
+        <div class="col-md-9 p-4 p-md-5">
+            
+            <section class="content-section">
+                <h2>Research Interests</h2>
+                <div class="row text-center">
+                    <div class="col-md-3"><strong>NLP</strong></div>
+                    <div class="col-md-3"><strong>Computer Vision</strong></div>
+                    <div class="col-md-3"><strong>Distributed Systems</strong></div>
+                    <div class="col-md-3"><strong>Cloud Computing</strong></div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Education</h2>
+                <div class="mb-4">
+                    <span class="date-location">2021 – Present</span>
+                    <div class="job-title">B.S. in Computer Engineering</div>
+                    <div>Amirkabir University of Technology</div>
+                    <ul class="mt-2">
+                        <li><strong>GPA:</strong> 3.66/4 (17.44/20)</li>
+                        <li><strong>Thesis:</strong> Anomaly Detection and Reporting System in Water Distribution</li>
+                        <li><strong>Perfect Scores:</strong> Information Retrieval (20/20), Data Structures (20/20)</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="date-location">2015 – 2021</span>
+                    <div class="job-title">Diploma of Math and Physics</div>
+                    <div>Sampad (Exceptional Talents School)</div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Work Experience</h2>
+                <div class="mb-4">
+                    <span class="date-location">Dec 2023 – Present</span>
+                    <div class="job-title">Machine Learning Engineer | Yektanet</div>
+                    <ul>
+                        <li>Improved CPM by 27% by transitioning CTR prediction to model-based systems.</li>
+                        <li>Optimized real-time pipelines reducing resource usage by 50%.</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <span class="date-location">Jul 2023 – Sep 2023</span>
+                    <div class="job-title">AI Engineer Intern | Roshan-AI</div>
+                    <ul>
+                        <li>Trained CNN for Tuberculosis detection (95% F1-score).</li>
+                        <li>Developed Persian NER model (83% F1-score).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Selected Projects</h2>
+                <div class="mb-3">
+                    <div class="job-title">Twitter Sentiment Analysis</div>
+                    <p class="mb-1">Classified tweets using TF-IDF and KNN, reaching a 98% F1-score.</p>
+                </div>
+                <div class="mb-3">
+                    <div class="job-title">Book Recommender System</div>
+                    <p class="mb-1">Implemented collaborative filtering using TensorFlow and NumPy.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Honors & Awards</h2>
+                <ul>
+                    <li>Ranked 227th in National University Entrance Exam (Top 0.15% of 142k students).</li>
+                    <li>Member of National Organization for Development of Exceptional Talents.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Technical Skills</h2>
+                <div>
+                    <strong>Languages:</strong> 
+                    <span class="skill-badge">Python</span><span class="skill-badge">Java</span><span class="skill-badge">Golang</span><span class="skill-badge">SQL</span>
+                </div>
+                <div class="mt-2">
+                    <strong>ML/AI:</strong> 
+                    <span class="skill-badge">PyTorch</span><span class="skill-badge">TensorFlow</span><span class="skill-badge">Scikit-learn</span><span class="skill-badge">Spark MLlib</span>
+                </div>
+                <div class="mt-2">
+                    <strong>Infrastructure:</strong> 
+                    <span class="skill-badge">Docker</span><span class="skill-badge">Kubernetes</span><span class="skill-badge">Airflow</span><span class="skill-badge">Prometheus</span>
+                </div>
+            </section>
+
+        </div>
     </div>
-  </main>
-  <script src="assets/js/scripts.js"></script>
+</div>
+
 </body>
 </html>
